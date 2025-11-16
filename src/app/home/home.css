@@ -1,0 +1,16 @@
+a:hover , a:focus{
+  background-color: goldenrod;
+}
+a:first-child{
+  text-decoration: none;
+  color: green;
+}
+
+h1:first-child{
+  color: green;
+}
+
+.home-container{
+  width: 100%;
+  padding: 10px;
+}

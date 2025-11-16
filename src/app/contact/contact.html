@@ -1,0 +1,19 @@
+<div class="aline">
+  <h1>Contact</h1>
+  <p>You can ask whatever you like via this contact form.</p>
+</div>
+<div class="container">
+  <form class="contact_form" [formGroup]="applyForm" (submit)="submitApplication()" )]>
+    <label for="name"></label>
+    <input type="text" id="name" placeholder="Your Name" formControlName="name">
+
+    <label for="email"></label>
+    <input type="email" id="email" placeholder="Your email" formControlName="email">
+
+    <label for="msg"></label>
+    <textarea type="text" id="msg" placeholder="Your message here"
+    style="height: 200px" formControlName="msg"> </textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
