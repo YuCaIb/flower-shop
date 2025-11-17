@@ -1,0 +1,6 @@
+<section>
+  <h2>Basket</h2>
+  @for (item of basketService.basket(); track item.product_id) {
+    <app-basket-items [item]="item" />
+  }
+</section>

@@ -2,10 +2,10 @@
   <img [src]="flowerList().photo_url" [alt]="flowerList().alt">
   <h2>{{ flowerList().name }}</h2>
   <p>
-    {{flowerList().content}}
+    {{ flowerList().content }}
   </p>
   <a routerLink="/blog">blog</a>
-  <button>add to basket</button>
+  <button (click)="basketService.addToBasket(flowerList())">add to basket</button>
 </div>
 
 

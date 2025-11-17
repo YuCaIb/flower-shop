@@ -1,6 +1,7 @@
-import {Component, input} from '@angular/core';
+import {Component, inject, input} from '@angular/core';
 import {FlowersInfo} from '../flowers-info';
 import {RouterLink} from '@angular/router';
+import {BasketService} from '../basket-service';
 
 @Component({
   selector: 'app-fower-list',
@@ -10,5 +11,9 @@ import {RouterLink} from '@angular/router';
 })
 export class FowerList {
   flowerList = input.required<FlowersInfo>();
+  basketService = inject(BasketService);
 
+/*  addToBasket() {
+    this.basketService.addToBasket();
+  }*/
 }

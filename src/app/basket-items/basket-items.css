@@ -1,0 +1,14 @@
+.basket_item{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px ;
+  display: inline-block;
+  justify-content: space-between;}
+.basket_item:hover{
+  background-color: cornflowerblue;
+}
+.basket_item img{
+  width: 250px;
+}

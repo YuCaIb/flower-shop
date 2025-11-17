@@ -1,6 +1,7 @@
-import { Component, signal } from '@angular/core';
+import {Component, inject, signal} from '@angular/core';
 import {RouterLink, RouterOutlet} from '@angular/router';
 import { Home } from './home/home';
+import {BasketService} from './basket-service';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,7 @@ import { Home } from './home/home';
             <li><a routerLink="/contact">Contact</a></li>
             <li><a routerLink="/blog">Blog</a></li>
             <li><a routerLink="/about">About</a></li>
+            <li><a routerLink="/basket"> Basket ({{basketService.basket().length}}) </a></li>
           </ul>
         </nav>
       </header>
@@ -32,5 +34,6 @@ import { Home } from './home/home';
 export class App {
   protected readonly title = signal('flower-shop');
 
+  basketService= inject(BasketService);
 
 }
