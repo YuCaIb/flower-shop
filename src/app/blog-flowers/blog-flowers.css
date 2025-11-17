@@ -1,0 +1,28 @@
+.blog_flowers {
+  background-color: goldenrod;
+  padding: 20px;
+  margin:20px;
+  position: relative;
+  min-height: 150px;
+}
+
+.blog_flowers label {
+  color: green;
+  font-size: 1.4rem;
+  display: block;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.blog_flowers img {
+  float: right;
+  width: 250px;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.blog_flowers article {
+  overflow: hidden;
+  line-height: 1.5;
+}

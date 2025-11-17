@@ -1,0 +1,21 @@
+.listing{
+  background-color: greenyellow;
+  border-radius: 15px;
+  padding-bottom: 15px ;
+  border: 2px solid goldenrod;
+  margin: 10px;
+  display: inline-block;
+  width: 20vw;
+}
+
+.listing img{
+  object-fit: cover;
+  height: 100%;
+}
+
+.listing h2{
+  text-align: center;
+}
+.listing article{
+  text-align: center;
+}

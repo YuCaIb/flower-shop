@@ -13,10 +13,10 @@ import { Home } from './home/home';
             <li><a href="/">
               <img src="daisy.svg" alt="resim çıkmadı" width=64 height=64>
             </a></li>
-            <li><a href="#">Flowers</a></li>
+            <li><a routerLink="/flowers">Flowers</a></li>
             <li><a routerLink="/contact">Contact</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
+            <li><a routerLink="/blog">Blog</a></li>
+            <li><a routerLink="/about">About</a></li>
           </ul>
         </nav>
       </header>

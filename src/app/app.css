@@ -1,6 +1,6 @@
 /* body-font*/
 *,*:before,*:after{
-  font:  16px/1.5 "Times New Roman", Times, sans-serif ;
+  font:  18px/1.5 "Times New Roman", Times, sans-serif ;
 }
 
 /* Navigation Bar*/
@@ -21,7 +21,8 @@ nav a:hover, nav a:focus {
 }
 
 nav ul li a{
-  color: white;
+  color: green;
+  font-weight: bolder;
   text-decoration: none;
   text-align: center;
 }
