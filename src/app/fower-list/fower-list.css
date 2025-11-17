@@ -4,18 +4,30 @@
   padding-bottom: 15px ;
   border: 2px solid goldenrod;
   margin: 10px;
-  display: inline-block;
+  display: inline-grid;
   width: 20vw;
+  overflow: hidden;
 }
 
-.listing img{
+img{
   object-fit: cover;
-  height: 100%;
+  width: 250px;
+  height: 250px ;
 }
 
-.listing h2{
+ h2{
   text-align: center;
+  }
+
+p{
+  text-align: center;
+  margin-top: -15px;
 }
-.listing article{
-  text-align: center;
+
+button{
+  background-color: cornflowerblue;
+}
+
+button:hover{
+  background-color: goldenrod;
 }

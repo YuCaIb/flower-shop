@@ -1,11 +1,10 @@
 <div class="listing">
   <img [src]="flowerList().photo_url" [alt]="flowerList().alt">
   <h2>{{ flowerList().name }}</h2>
-  <hr>
   <p>
     {{flowerList().content}}
   </p>
-  <a href="">blog</a>
+  <a routerLink="/blog">blog</a>
   <button>add to basket</button>
 </div>
 

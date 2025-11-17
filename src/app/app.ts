@@ -21,7 +21,6 @@ import { Home } from './home/home';
         </nav>
       </header>
       <section>
-        <br>
         <router-outlet></router-outlet>
       </section>
     </main>

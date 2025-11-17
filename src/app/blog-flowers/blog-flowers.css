@@ -1,9 +1,14 @@
 .blog_flowers {
   background-color: goldenrod;
   padding: 20px;
-  margin:20px;
+  margin: 0 auto 20px auto;
   position: relative;
   min-height: 150px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 4px #000 ;
+    overflow: hidden;
+  width: 70vw;
+
 }
 
 .blog_flowers label {
