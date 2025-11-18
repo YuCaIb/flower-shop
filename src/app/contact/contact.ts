@@ -21,6 +21,7 @@ export class Contact {
   submitApplication() {
     if (this.applyForm.invalid){
       console.log('Form validation failed');
+      window.alert("Please enter valid; email and min 250 char message");
       return;
     }
     this.contactService.submitApplication(

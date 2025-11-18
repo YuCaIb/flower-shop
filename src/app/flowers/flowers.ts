@@ -1,6 +1,7 @@
-import {Component,} from '@angular/core';
+import {Component, inject, Injectable,} from '@angular/core';
 import {FlowersInfo} from '../flowers-info';
 import {FowerList} from '../fower-list/fower-list';
+import {FlowerService} from '../flower-service';
 
 @Component({
   selector: 'app-flowers',
@@ -16,21 +17,17 @@ import {FowerList} from '../fower-list/fower-list';
   `,
   styleUrl: './flowers.css',
 })
-export class Flowers {
 
-  url = "http://localhost:3000/FlowersInfo";
+@Injectable()
+export class Flowers {
 
   flowerList: FlowersInfo[] = [];
 
-  async getAllFlowersInfo(): Promise<FlowersInfo[]> {
-    const data = await fetch(this.url);
-
-    return (await data.json()) ?? [];
-  }
+  flowerService = inject(FlowerService)
 
 
   constructor() {
-    this.getAllFlowersInfo().then((flowerList: FlowersInfo[]) => {
+    this.flowerService.getAllFlowersInfo().then((flowerList: FlowersInfo[]) => {
       this.flowerList = flowerList;
       console.log(this.flowerList);
     })
