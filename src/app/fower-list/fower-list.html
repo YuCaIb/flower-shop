@@ -4,8 +4,10 @@
   <p>
     {{ flowerList().content }}
   </p>
-  <a routerLink="/blog">blog</a>
-  <button (click)="basketService.addToBasket(flowerList())">add to basket</button>
+  <div class="listing-footer">
+    <a routerLink="/blog">blog</a>
+    <button (click)="basketService.addToBasket(flowerList())">add to basket</button>
+  </div>
 </div>
 
 

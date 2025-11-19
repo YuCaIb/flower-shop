@@ -12,5 +12,5 @@ export class CostumValidators {
     return null;
   } ;
 
-
+/*https://youtu.be/d39mapIdLes?si=Q-gWcmdixZwOYSTd&t=427*/
 }

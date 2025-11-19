@@ -5,4 +5,6 @@ export interface FlowersInfo {
   photo_url: string;
   alt: string;
   blog: string;
+  quantity: number;
+  price: number;
 }
