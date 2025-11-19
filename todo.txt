@@ -1,5 +1,15 @@
-contact
-kayıt  et.
+Contact Form'a validasyon ekle (kullanıcının göreceği şekilde)
 
-basket kısmmı
-kayıt et, düğmeye bağla
+Flower kartları hepsiburada/n11/trndy gibi benzet.
+
+Sepet için drawer yap.
+
+Flowers'da Grid mantığına geç.
+
+CSS'leri detaylandır.
+
+Flower Seçeneklerini arttır. Her sayfada en fazla 20 adet flowerımız olsun.
+
+FlowerInfo interface'e quantitiy (kaç tane bu üründen var.) ekle.
+
+Basket'e aynı üründen gönderilince sayısal olarak allta belirtilsin, aynısından ekleyip durmasın. (getBasket addToBasket fonksiyonları uygun olarak güncellenmeli veya ek bir fonksiyon daha eklemem gerekiyor.)

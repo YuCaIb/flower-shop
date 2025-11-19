@@ -3,17 +3,28 @@
   <p>You can ask whatever you like via this contact form.</p>
 </div>
 <div class="container">
+
   <form class="contact_form" [formGroup]="applyForm" (submit)="submitApplication()">
-    <label for="contact_name"></label>
-    <input type="text" id="contact_name" placeholder="Your Name" formControlName="name">
+    @if (applyForm.get('name')?.invalid) {
+      <label for="contact_name">min 3 len char</label>
+    }
+    <input type="text" id="contact_name" placeholder="Your Name" formControlName="name" >
 
-    <label for="contact_email"></label>
-    <input type="email" id="contact_email" placeholder="Your email" formControlName="email" >
+    @if (applyForm.get('email')?.invalid) {
+      <label for="contact_email">please input a valid email</label>
+    }
+    <input type="email" id="contact_email" placeholder="mail@exampale.com" formControlName="email" >
 
-    <label for="contact_msg"></label>
-    <textarea type="text" id="contact_msg" placeholder="Your message here"
+    @if (applyForm.get('msg')?.invalid) {
+      <label for="contact_msg">minimum 250 char - maximum 500 char</label>
+    }
+    <textarea type="text" id="contact_msg" placeholder="Your message here (min 250 len, max 500 char)"
     style="height: 200px" formControlName="msg"> </textarea>
 
-    <input type="submit" value="Submit">
+    @if (applyForm.valid){
+      <input type="submit" value="Submit">
+    } @else {
+      <input type="submit" value="Submit"  disabled>
+    }
   </form>
 </div>
