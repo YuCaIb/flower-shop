@@ -7,5 +7,11 @@ import { Injectable } from '@angular/core';
 export class ContactService {
   submitApplication(name:string, email:string, msg:string) {
     console.log(`Contact form recived, name: ${name} email ${email} message ${msg}`);
+    let contactInfo = {
+      name: name,
+      email: email,
+      msg: msg,
+    }
+  localStorage.setItem("contactInfo", JSON.stringify(contactInfo));
   }
 }

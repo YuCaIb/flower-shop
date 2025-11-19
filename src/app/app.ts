@@ -1,27 +1,13 @@
-import {Component, inject, signal} from '@angular/core';
-import {RouterLink, RouterOutlet} from '@angular/router';
-import { Home } from './home/home';
-import {BasketService} from './basket-service';
+import {Component, signal} from '@angular/core';
+import { RouterOutlet} from '@angular/router';
+import {Header} from './header/header';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Home, RouterLink],
+  imports: [RouterOutlet, Header],
   template: `
     <main>
-      <header>
-        <nav>
-          <ul>
-            <li><a href="/">
-              <img src="daisy.svg" alt="resim çıkmadı" width=64 height=64>
-            </a></li>
-            <li><a routerLink="/flowers">Flowers</a></li>
-            <li><a routerLink="/contact">Contact</a></li>
-            <li><a routerLink="/blog">Blog</a></li>
-            <li><a routerLink="/about">About</a></li>
-            <li><a routerLink="/basket"> Basket ({{basketService.basket().length}}) </a></li>
-          </ul>
-        </nav>
-      </header>
+      <app-header/>
       <section>
         <router-outlet></router-outlet>
       </section>
@@ -33,7 +19,4 @@ import {BasketService} from './basket-service';
 })
 export class App {
   protected readonly title = signal('flower-shop');
-
-  basketService= inject(BasketService);
-
 }

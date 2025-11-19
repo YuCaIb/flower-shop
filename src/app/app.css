@@ -3,44 +3,4 @@
   font:  18px/1.5 "Times New Roman", Times, sans-serif ;
 }
 
-/* Navigation Bar*/
-nav{
-  margin-top: -17px;
-}
-
-nav ul {
-  background-color: #1ee9d8;
-  display: flex;
-  padding: 0;
-  list-style-type: none;
-  align-items: center;
-}
-
-nav a:hover, nav a:focus {
-  background-color: goldenrod;
-}
-
-nav ul li a{
-  color: green;
-  font-weight: bolder;
-  text-decoration: none;
-  text-align: center;
-}
-
-nav ul li {
-  padding: 10px 15px;
-  display: block;
-}
-nav ul li:first-child {
-  flex-grow: 0;
-  margin-right: auto;
-}
-nav ul li:not(:first-child) {
-  flex-grow: 0;
-}
-nav a {
-  display: block;
-  text-decoration: none;
-}
-
 

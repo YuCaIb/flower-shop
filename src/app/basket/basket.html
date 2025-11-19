@@ -1,6 +1,11 @@
 <section>
-  <h2>Basket</h2>
-  @for (item of basketService.basket(); track item.product_id) {
-    <app-basket-items [item]="item" />
-  }
+  <button style="margin: 10px; padding: 10px; border-radius: 5px;"
+          type="submit" (click)="basketService.saveBasket()"> Save basket</button>
+  <div>
+    <h2>Basket</h2>
+    @for (item of basketService.getBasketItems(); track item.product_id) {
+      <app-basket-items [item]="item" />
+    }
+  </div>
+
 </section>
