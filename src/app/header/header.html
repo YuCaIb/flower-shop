@@ -1,0 +1,14 @@
+<header>
+  <nav>
+    <ul>
+      <li><a href="/">
+        <img src="daisy.svg" alt="resim çıkmadı" width=64 height=64>
+      </a></li>
+      <li><a routerLink="/flowers">Flowers</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
+      <li><a routerLink="/blog">Blog</a></li>
+      <li><a routerLink="/about">About</a></li>
+      <li><a routerLink="/basket"> Basket ({{basketService.getBasketItems() !=null ? basketService.getBasketItems().length : 0}}) </a></li>
+    </ul>
+  </nav>
+</header>
