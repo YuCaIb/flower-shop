@@ -1,3 +1,4 @@
+Tamamlandı :
 Contact Form'a validasyon ekle (kullanıcının göreceği şekilde)
 
 Flower kartları hepsiburada/n11/trndy gibi benzet.
@@ -6,10 +7,16 @@ Sepet için drawer yap.
 
 Flowers'da Grid mantığına geç.
 
-CSS'leri detaylandır.
-
-Flower Seçeneklerini arttır. Her sayfada en fazla 20 adet flowerımız olsun.
-
 FlowerInfo interface'e quantitiy (kaç tane bu üründen var.) ekle.
+
+CSS'leri detaylandır. (Kısmen bitti)
+
+Her product_id için sayfa oluştur detayları yazdır (style vermek gerekiyor.)
+
+Flower Seçeneklerini arttır.
+---------------------------------
+Devam ediliyor:
+
+Her sayfada en fazla 20 adet flowerımız olsun.
 
 Basket'e aynı üründen gönderilince sayısal olarak allta belirtilsin, aynısından ekleyip durmasın. (getBasket addToBasket fonksiyonları uygun olarak güncellenmeli veya ek bir fonksiyon daha eklemem gerekiyor.)
