@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterLink} from '@angular/router';
+import {FowerList} from '../fower-list/fower-list';
 @Component({
   selector: 'app-home',
   imports: [RouterLink],
@@ -8,5 +9,4 @@ import {RouterLink} from '@angular/router';
 })
 
 export class Home {
-
 }

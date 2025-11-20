@@ -1,40 +1,41 @@
-.container{
-  height: 80vh;
+.container {
   margin: 0 auto;
-  width: 80vw;
-  background-color: antiquewhite;
+  width: 80%;
+  background-color: #faf9f7;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-h1{
-  color: orange;
-  text-align: left;
-}
-
-h2{
-  text-align: left;
+.container h1, .container h2 {
   color: green;
+  text-align: left;
 }
 
-table{
+
+.container table {
   align-self: center;
   border-collapse: collapse;
   border: 1px solid black;
 }
 
-table, th, td {
+.container table, .container th, .container td {
   border: 1px solid black;
   background-color: antiquewhite;
 }
-th:nth-child(odd) {
+
+.container th:nth-child(odd) {
   background-color: white;
 }
-th:nth-child(even) {
+
+.container th:nth-child(even) {
   background-color: green;
 }
-td:nth-child(even) {
+
+.container td:nth-child(even) {
   background-color: tomato;
 }
 
-thead{
+.container thead {
   background-color: goldenrod;
 }

@@ -11,17 +11,15 @@ export class BasketService {
 basket = signal<FlowersInfo[]>([]);*/
 
 
-  addToBasket(product: FlowersInfo) {
-  let basket = this.getBasketItems()
-
-    console.log(basket)
-    if (basket == null) {
-    basket = []
+  addToBasket(product: FlowersInfo | undefined)  {
+    let basket = this.getBasketItems()
+    if(product){
+      if (basket == null) {
+        basket = []
+      }
+      basket.push(product)
+      localStorage.setItem('flowerbasket', JSON.stringify(basket));
     }
-    basket.push(product)
-
-    localStorage.setItem('flowerbasket', JSON.stringify(basket));
-
   }
 
 

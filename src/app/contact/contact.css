@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .aline p{
   font: 700 14px/1.5 "Roboto", sans-serif;
 }
@@ -13,12 +14,13 @@
 }
 
 .container{
-border-radius: 60px;box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3) ;
-background: moccasin;
-padding: 10px;
+  border-radius: 60px;
+  box-shadow: 1px 3px 3px 2px #c7c7c7 ;
+  background: #faf9f7;
+  padding: 10px;
 }
 
-input[type=text], textarea, input[type=email], input[type=submit] {
+.container input[type=text], .container  textarea, .container input[type=email], .container input[type=submit] {
   width: 100%;
   padding: 10px;
   border: 3px solid goldenrod;
@@ -29,17 +31,21 @@ input[type=text], textarea, input[type=email], input[type=submit] {
   border-radius: 20px;
 }
 
-input[type=submit] {
+.container input[type=submit] {
 width: 50%;
 }
 
-input[type=submit]:hover {
+.container input[type=submit]:hover {
   opacity: 0.8;
   cursor: pointer;
   background: goldenrod;
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3) ;
 }
 
+.container label {
+  color:  red;
+  border-radius: 5px;
+}
 
 
 

@@ -1,14 +1,21 @@
 .listing{
-  background-color: greenyellow;
   border-radius: 10px;
   padding-bottom: 15px;
   border: 2px solid goldenrod;
+  box-shadow: 5px 4px 10px #000;
 
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   height: 100%;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.listing:hover {
+  box-shadow: 10px 4px 10px #000;
+}
+
 .listing img{
   object-fit: cover;
   width: 100%;
@@ -39,7 +46,6 @@
 }
 
 
-
 .listing-footer  a{
   text-decoration: none;
   color: blue;
@@ -52,7 +58,8 @@
 }
 
 .listing-footer button{
-  background-color: cornflowerblue;
+  background-color: white;
+  box-shadow: 1px 1px cornflowerblue;
   align-self: self-start;
   cursor: pointer;
 }
@@ -61,3 +68,13 @@
 .listing-footer button:hover{
   background-color: goldenrod;
 }
+
+a:first-child{
+  text-decoration: none;
+  color: black;
+}
+
+a:first-child:hover{
+  background-color: goldenrod;
+}
+

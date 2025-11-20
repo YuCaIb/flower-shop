@@ -1,25 +1,33 @@
-
-/* Navigation Bar*/
 nav{
   margin-top: -17px;
 }
-
+/*#1ee9d8*/
 nav ul {
-  background-color: #1ee9d8;
+  background-color: #faf9f7;
+  box-shadow: 0 1px 2px 0 #c7c7c7;
   display: flex;
   padding: 0;
   list-style-type: none;
   align-items: center;
 }
 
-nav a:hover, nav a:focus {
+nav a:hover{
+  text-decoration: underline;
+  text-decoration-color: goldenrod;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+
+}
+
+nav a:focus {
   background-color: goldenrod;
 }
 
 nav ul li a{
   color: green;
   font-weight: bolder;
-  text-decoration: none;
   text-align: center;
 }
 
@@ -34,7 +42,4 @@ nav ul li:first-child {
 nav ul li:not(:first-child) {
   flex-grow: 0;
 }
-nav a {
-  display: block;
-  text-decoration: none;
-}
+
