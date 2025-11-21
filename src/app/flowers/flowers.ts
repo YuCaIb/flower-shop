@@ -15,7 +15,6 @@ import {FlowerService} from '../flower-service';
       }
 
     </section>
-
   `,
   styleUrl: './flowers.css',
 })
@@ -29,7 +28,26 @@ export class Flowers {
   flowerList: FlowersInfo[] = [];
 
 
-  visibleFlowers: FlowersInfo[] = [];
+  visibleFlowers: FlowersInfo[] = [ {
+    "product_id": 1,
+    "name": "Deliha",
+    "content": "deliha flower is the cutest among the flower !!",
+    "photo_url" : this.dahlia,
+    "alt": "Dahlia Flower",
+    "blog": "Dahlias are show-stoppers with their stunning geometric petals and incredible range of colours and sizes. They're perfect for any gardener looking to make a bold statement. Dahlias originally come from Mexico and were even eaten by the Aztecs long ago. They are special because they keep blooming from the middle of summer until the first cold frosts of autumn, which means they add colour to the garden for a long time.",
+    "quantity": 10,
+    "price": 75
+  },
+    {
+      "product_id": 2,
+      "name": "Daisy",
+      "content": "Dasies are the most commmon loved flowers. Take this If you don't know what to get for her.",
+      "photo_url" : this.daisy,
+      "alt": "Daisy",
+      "blog": "Daisies are a great symbol of happiness. Their simple white petals and bright yellow centres remind us of sunny days and open fields. Daisies are tough and flexible, symbolising purity and innocence, and they are the birth flower for April. They are also really good at adapting and can be found almost everywhere in the world except for Antarctica. The name \"daisy\" comes from \"day's eye\" because the flower opens in the morning and closes at night. Plus, what looks like one single daisy flower is actually made up of many small flowers grouped together.",
+      "quantity": 10,
+      "price": 200.75
+    },];
 
   readonly pageSize:number  = 10
   visibleCount : number = 0;
