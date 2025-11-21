@@ -11,9 +11,9 @@ export class BasketService {
 basket = signal<FlowersInfo[]>([]);*/
 
 
-  addToBasket(product: FlowersInfo | undefined)  {
+  addToBasket(product: FlowersInfo | undefined) {
     let basket = this.getBasketItems()
-    if(product){
+    if (product) {
       if (basket == null) {
         basket = []
       }
@@ -23,7 +23,7 @@ basket = signal<FlowersInfo[]>([]);*/
   }
 
 
-  getBasketItems(): FlowersInfo[]{
+  getBasketItems(): FlowersInfo[] {
     const baskets_json = localStorage.getItem("flowerbasket");
 
     return JSON.parse(baskets_json as string) as FlowersInfo[];
@@ -31,15 +31,16 @@ basket = signal<FlowersInfo[]>([]);*/
 
 
   async saveBasket() {
-    const basketInfoToDB:string|null = localStorage.getItem('flowerbasket');
+    const basketInfoToDB: string | null = localStorage.getItem('flowerbasket');
 
-    console.log( "basket infoyu kayıt ettik, db\'e gönderdiğimizi düşünelim: " + basketInfoToDB)
+    console.log("basket infoyu kayıt ettik, db\'e gönderdiğimizi düşünelim: " + basketInfoToDB)
   }
 
 
   constructor() {
   }
 }
+
 /*
 *     this.basket.set([...this.basket(), product])
     localStorage.setItem("flowerbasket", JSON.stringify(product));

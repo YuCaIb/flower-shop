@@ -78,3 +78,8 @@ a:first-child:hover{
   background-color: goldenrod;
 }
 
+
+.div-header{
+  border-bottom: 1px solid goldenrod;
+}
+

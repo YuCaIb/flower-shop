@@ -1,14 +1,14 @@
   <div class="listing" [routerLink]="['/flower-detail', flowerList().product_id]" >
-    <img [src]="flowerList().photo_url" [alt]="flowerList().alt">
-    <h2>{{ flowerList().name }}</h2>
-    <p>
-      {{ flowerList().content }}
-    </p>
+    <div class="div-header">
+      <img [src]="flowerList().photo_url" [alt]="flowerList().alt">
+      <h2>{{ flowerList().name }}</h2>
+      <p>
+        {{ flowerList().content }}
+      </p>
+    </div>
+
     <div class="listing-footer">
       <a [routerLink]="['/flower-detail', flowerList().product_id]">learn more</a>
       <button (click)="basketService.addToBasket(flowerList()) ; $event.stopPropagation()">add to basket</button>
     </div>
   </div>
-
-
-
