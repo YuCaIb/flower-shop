@@ -49,7 +49,7 @@ export class Flowers {
     })
   }
 
-  @HostListener('windows:scroll', [])
+  @HostListener('window:scroll', [])
   onWindowsScroll() {
     const scrollHeight = window.innerHeight + window.scrollY;
     const threshHold = 300;
