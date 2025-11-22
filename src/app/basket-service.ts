@@ -13,13 +13,23 @@ basket = signal<FlowersInfo[]>([]);*/
 
   addToBasket(product: FlowersInfo | undefined) {
     let basket = this.getBasketItems()
-    if (product) {
-      if (basket == null) {
-        basket = []
-      }
-      basket.push(product)
-      localStorage.setItem('flowerbasket', JSON.stringify(basket));
+
+    if(!product) return;
+
+    if(!basket){
+      basket= [];
     }
+
+    const items_exist = basket.find(item => item.product_id === product.product_id);
+    console.log(items_exist);
+    if(items_exist) {
+      items_exist.quantity = (items_exist.quantity || 1) + 1 ;
+    }
+    else{
+      basket.push({...product,quantity:1});
+    }
+
+    localStorage.setItem('flowerbasket', JSON.stringify(basket));
   }
 
 
@@ -27,6 +37,17 @@ basket = signal<FlowersInfo[]>([]);*/
     const baskets_json = localStorage.getItem("flowerbasket");
 
     return JSON.parse(baskets_json as string) as FlowersInfo[];
+  }
+
+  getTotalQuantity(): number {
+    const baskets_json  = localStorage.getItem("flowerbasket");
+    let deneme = JSON.parse(baskets_json as string) as FlowersInfo[];
+    let quantlar= deneme.map((quantity) => quantity)
+    let total: number = 0;
+    for(let i = 0; i < quantlar.length; i++) {
+      total = quantlar[i].quantity + total;
+    }
+    return total
   }
 
 
